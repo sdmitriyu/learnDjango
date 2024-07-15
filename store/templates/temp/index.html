@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+
+</head>
+<body>
+    {% for el in post %}
+    <div class="table">
+        <div class="element">
+            {{el.title}}
+        </div>
+        <div class="element">
+            {{el.text}}
+        </div>
+    </div>
+    {%endfor%}
+
+</body>
+</html>
